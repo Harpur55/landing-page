@@ -415,7 +415,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin-top: 30px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -431,6 +431,10 @@ h6 {
  .logo-title img {
  width: 100px;
  padding-left: 10px;
+}
+
+@media (max-width: 575.98px) {
+ 
 }
  .logo-title .Wh {
  width: 120px;
@@ -487,6 +491,7 @@ h6 {
     width: 100%;
     height: auto; /* Pastikan gambar mempertahankan rasio aspeknya */
   }
+  
   
   @media (max-width: 768px) {
     #hero h1 {
@@ -693,8 +698,17 @@ section {
 
 .why-us .content h3 {
   font-weight: 400;
+  text-align: center;
   font-size: 34px;
   color: #37517e;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .why-us .content h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 34px;
+    color: #37517e;
+  }
 }
 
 .why-us .content h4 {
