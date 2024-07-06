@@ -1295,17 +1295,6 @@ section {
 .footer .credits a {
   color: var(--color-white);
 }
-.card {
-  max-width: 300px;
-  margin: 12px;
-}
-.btn-primary {
-  margin-bottom: 10px;
-}
-.card-body {
-  padding-bottom: 0;
-}
-.card-footer {
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
+.entry-header{
+  margin-bottom: 1rem;
 }
