@@ -224,7 +224,7 @@ section {
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .navbar li {
@@ -234,7 +234,7 @@ section {
   .navbar a,
   .navbar a:focus {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: var(--font-default);
@@ -1297,4 +1297,22 @@ section {
 }
 .entry-header{
   margin-bottom: 1rem;
+}
+
+.divider {
+  border-bottom: 1px solid #dee2e6;
+  /* margin: 10px 0; */
+}
+.divider {
+  border-bottom: 1px solid #dee2e6;
+  margin: 10px 0;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.card-img-top{
+padding-top: 10px;
 }

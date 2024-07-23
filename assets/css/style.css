@@ -837,8 +837,8 @@ section {
   font-family: "Poppins", sans-serif;
 }
 .img-fluid img{
-  width: 50px;
-  height: 10px;
+  width: 20px;
+  height: auto;
 }
 
 .skills .content ul {
@@ -1191,105 +1191,111 @@ font-weight: bold;
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
-  background: #fff;
-  transition: 0.5s;
-  height: 100%;
+/* team */
+
+
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba(40, 58, 90, 0.9);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  color: white;
 }
 
-.team .member .pic {
-  overflow: hidden;
-  width: 180px;
+.member .pic {
+  margin-bottom: 15px;
   border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
 }
 
-.team .member .pic img {
-  transition: ease-in-out 0.3s;
+.member .pic img {
+  width: 100%;
+  height: auto;
 }
 
-.team .member:hover {
-  transform: translateY(-10px);
+.member-info {
+  text-align: justify;
+  text-align-last: center;
+  color: white;
 }
 
-.team .member .member-info {
-  padding-left: 30px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #37517e;
-}
-
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
-.team .member p {
-  margin: 10px 0 0 0;
+.member-info .title-mobile {
+  display: none;
   font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
-.team .member .social {
-  margin-top: 12px;
-  display: flex;
+.member-info h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: wh;
+}
+
+.member-info span {
+  display: block;
+  font-size: 14px;
+  color:white;
+  margin-bottom: 10px;
+}
+
+.member-info p {
+  margin-bottom: 15px;
+}
+
+.social a {
+  color: #ffffff;
+  transition: color 0.3s;
+  margin: 0 5px;
   align-items: center;
-  justify-content: flex-start;
 }
 
-.team .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #eff2f8;
+.social a:hover {
+  color: #007bff;
 }
 
-.team .member .social a i {
-  color: #37517e;
-  font-size: 16px;
-  margin: 0 2px;
+@media (min-width: 768px) {
+  .member {
+    flex-direction: row;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .member .pic {
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 120px;
+    height: 120px;
+  }
+
+  .member-info {
+    text-align: left;
+    text-align-last: left;
+    font-size: 13px;
+  }
+
+  .member-info .title-mobile {
+    display: none;
+    font-size: 13px;
+  }
 }
 
-.team .member .social a:hover {
-  background: #47b2e4;
+@media (max-width: 767px) {
+  .member-info .title-mobile {
+    display: block;
+  }
 }
 
-.team .member .social a:hover i {
-  color: #fff;
-}
-
-.team .member .social a+a {
-  margin-left: 8px;
-}
-
-
+/*  */
 
 /*--------------------------------------------------------------
 # Pricing
