@@ -127,7 +127,7 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header {
+/* .header {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
@@ -140,10 +140,16 @@ section {
 
 .header .logo img {
   max-height: 50px;
-  margin-right: 2px;
+  margin-right: 20px;
 }
 
 .header .logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-default);
+  font-family: var(--font-primary);
+}
+.header  h1 {
   font-size: 30px;
   font-weight: 700;
   color: var(--color-default);
@@ -209,7 +215,82 @@ section {
 
 section {
   scroll-margin-top: 70px;
+} */
+
+/* CSS file or within <style> tag */
+#header {
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 10px 0;
 }
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .logo {
+  display: flex;
+  align-items: center;
+}
+
+#header .logo img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+#header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: #007bff;
+}
+
+.bi-list.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #navbar ul {
+      flex-direction: column;
+      display: none;
+  }
+
+  .bi-list.mobile-nav-toggle {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation 
