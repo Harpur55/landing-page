@@ -1397,3 +1397,59 @@ section {
 .card-img-top{
 padding-top: 10px;
 }
+
+/*--------------------------------------------------------------
+# news
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+transform: translateX(0);
+}
+.card {
+  width: 8rem; /* Adjust width to make the cards smaller */
+}
+
+.card img {
+  height: auto; /* Ensure images scale correctly within the smaller cards */
+}
+
+.card-title {
+  font-size: 0.9rem; /* Adjust font size for smaller cards */
+}
+
+.card-text {
+  font-size: 0.8rem; /* Adjust font size for smaller cards */
+}
+
+.text-muted {
+  font-size: 0.7rem; /* Adjust font size for smaller text */
+}
